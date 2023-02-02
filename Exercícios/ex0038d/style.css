@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-image: linear-gradient(to right,  blue, white); background-attachment: fixed;
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(92, 92, 92, 0.349);
+}
+h1#principal{
+    font-family: serif;
+    font-style: italic;
+    text-align: center;
+    color: blue;
+    text-shadow: 2px 2px 6px rgba(100, 100, 100, 0.473);
+}
+h1{
+    font-size: 2em;
+    color: rgb(70, 68, 68);
+}
+h2{color: gray;}
+p{
+    text-indent: 10px}

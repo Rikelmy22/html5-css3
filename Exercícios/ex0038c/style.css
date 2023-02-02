@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body{background-image: linear-gradient(to left, black, white); background-attachment: fixed;}
+h1{color: green;}
+h1#principal{
+    background-color: grey;
+    color: #303138;
+    text-align: center;
+}
+h2{
+    color: #303138;
+}
+.um{
+    color: green;
+}
+.dois{
+    color: rgb(99, 99, 2);
+}
+.três{
+    color: rgb(124, 3, 3);
+}

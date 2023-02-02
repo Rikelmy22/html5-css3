@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GOWfont';
+    src: url('fontesssd/GODOFWAR.TTF' ) format('truetype');
+}
+body{
+    font-family: 'GOWfont';
+    background-image: linear-gradient(to right, #660601, #E7DFDE); background-attachment: fixed;
+    font-size: 17px;
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(102, 0, 0, 0.322);
+}
+h1{font-family: 'GOWfont', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466);
+   color: #660601;}

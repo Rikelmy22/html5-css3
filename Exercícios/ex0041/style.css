@@ -1,0 +1,68 @@
+@charset "UTF-8";
+body{
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+header{
+    background-color: gray;
+    color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-radius: 3px;
+}
+main{
+    background-color: lightslategray;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.445);
+}
+.primario{
+    background-color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.418);
+}
+.secundario{
+    background-color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 1px 1px rgba(20, 20, 20, 0.377);
+}
+.secundario>aside{
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+footer{
+    text-align: center;
+    background-color: rgb(165, 165, 165);
+    color: rgb(0, 0, 0);
+}
+nav{
+    text-align: center;
+    text-decoration: none;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+nav>a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+
+}
+nav>a:hover{
+    color: blue;
+    text-decoration: underline;
+    margin-right: 20px;
+
+}
+nav>a:active{
+    color: green;
+    text-decoration: none;
+}

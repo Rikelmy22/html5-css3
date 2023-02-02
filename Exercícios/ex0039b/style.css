@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+div{
+    color: blue;
+}
+div>p{
+    display: none;
+}
+div:hover>p{
+    display: block;
+    background-color: gray;
+    width: 60px;
+}

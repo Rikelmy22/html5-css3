@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'dirtywar';
+    src: url('fontes/dirty_war/Dirty\ War.otf') format('Opentype');
+}
+
+@font-face {
+    font-family: 'call of duty';
+    src: url('fontes/call_of_ops_duty/Call\ of\ Ops\ Duty.otf') format('Opentype');
+}
+
+:root {
+    --cor-01:#FFFFFF;
+    --cor-02:#DEEFE7;
+    --cor-03:#B4BEC9;
+    --cor-04:#159A9C;
+    --cor-05:#002333;
+
+    --font-tittle: 'call of duty';
+    --font-body: 'dirtywar';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    line-height: 20px;
+}
+
+p {
+   text-align: justify;
+}
+
+body {
+    background-color: var(--cor-03);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-03), var(--cor-05));
+    height: 150px;
+    padding: 10px;
+    box-shadow: 1px 1px 19px 1px rgba(66, 66, 66, 0.777);
+}
+
+header > #principal {
+    color: var(--cor-05);
+    font-family: var(--font-tittle);
+    text-align: center;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+}
+
+header > p {
+    text-align: center;
+    color: var(--cor-03);
+    margin-bottom: 30px;
+}
+
+header > nav > a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--cor-02);
+    padding-top: 5px;
+}
+
+header > nav > a:hover {
+    background-image: linear-gradient(to top, #002333, white);
+    transition-duration: 0.6s;
+    padding: 3px;
+    border: 1px solid var(--cor-01);
+} 
+
+main {
+    background-color: var(--cor-01);
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0px auto 10px auto;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 10px 0px rgba(59, 59, 59, 0.66);
+}
+
+main > article > h1 {
+    font-family: var(--font-body);
+    color: var(--cor-03);
+    padding: 0px 8px;
+    text-shadow: 1px 1px 1px rgb(52, 47, 47);
+    padding: 10px 0px;
+}
+
+main > article > h2 , h3 {
+    background-image: linear-gradient(to right, var(--cor-05), transparent);
+    font-family: var(--font-body);
+    color: var(--cor-03);
+    padding: 0px 8px;
+    margin: 10px 0px;
+}
+
+main > article > picture > img {
+    width: 97%;
+    display: block;
+    margin: auto;
+    padding: 2px 0px;
+}
+
+main > article > picture > img {
+    margin-bottom: 10px;
+}
+
+main > article > p {
+    padding: 3px 8px;
+    text-indent: 10px;
+}
+
+main > article > p > a {
+    text-decoration: none;
+    background-color: #649596;
+    color:black;
+}
+
+main > article > p > a:hover {
+    text-decoration: underline;
+    border: 1px solid var(--cor-05);
+    color: var(--cor-02);
+}
+
+main > article > p > a::after {
+    content: '\00A0\2620';
+    color: black;
+}
+
+main > article > div.video {
+    background-color: var(--cor-05);
+    padding-bottom: 57%;
+    margin: 0px;
+
+    position: relative;
+}
+
+main > article > div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main > article > aside {
+    background-color: var(--cor-03);
+    width: 97%;
+    margin: 10px auto;
+    line-height: 10px;
+    text-indent: 10px;
+}
+
+main > article > aside > h4 {
+    background-color: #0023339f;
+    color: var(--cor-02)
+}
+main > article > aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+main > article > aside > ul > li {
+    list-style-type: '\00A0\1F571';
+}
+
+main > article > aside > ul > li:hover {
+    list-style-type: '\2620';
+}
+
+main > article > aside > ul > li > abbr {
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--cor-05)
+    ;
+    color: var(--cor-02);
+}
+
+footer > p {
+    text-align: center;
+}
+
+footer > p >a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover {
+    color: black;
+    text-decoration: underline;
+    background-image: linear-gradient( to bottom, var(--cor-05), var(--cor-02));
+    transition-duration: 1s;
+    padding: 5px;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'finth';
+    src: url('fontes/HARRYP__.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'cantata';
+    src: url('fontes/CantataOne-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    line-height: 20px;
+}
+
+:root {
+    --cor-00:rgb(193, 193, 193);
+    --cor-01:#2f707082;
+    --cor-02:#0f6a59;
+    --cor-03:#0F5959;
+    --cor-04:#0A3A40;
+    --cor-05:#042326;
+
+    --font-text-principal:'finth';
+    --font-text-paragrafo: 'cantata'
+}
+body {
+    background-color: var(--cor-01);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-02), var(--cor-05), black);
+    height: 170px;
+    margin: 0px;
+    padding-top: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.426);
+}
+
+header > #principal {
+    text-align: center;
+    font-family: 'finth';
+    font-style: normal;
+    font-size: 4em;
+    padding: 20px;
+    text-shadow: 1px 1px 10px #ffffff91;
+}
+
+header > p {
+    text-align: center;
+    padding: 30px;
+    color: var(--cor-03);
+}
+
+header > nav {
+    padding-top: 10px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--cor-03);
+}
+
+header > nav > a:hover {
+    background-image: linear-gradient(to top, var(--cor-02), var(--cor-04));
+    color: #03181a;
+    transition-duration: 1s;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.453);
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+    box-shadow:  0px 2px 20px -1px rgba(55, 55, 55, 0.355);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+main > article > h1 {
+    color: var(--cor-05);
+    font-family: var(--font-text-paragrafo);
+    text-indent: 20px;
+    padding-left: 5px;
+    text-shadow: 0px 0px 5px rgba(75, 75, 75, 0.668);
+    padding: 10px 0px;
+}
+
+main > article > h2 , h3 {
+    background-image:linear-gradient(to right, var(--cor-05),  var(--cor-01));
+    color: lightgrey;
+    font-family: var(--font-text-paragrafo);
+    text-indent: 20px;
+    padding-left: 5px;
+    margin: 10px 0px;
+}
+
+main > article > p {
+    text-indent: 10px;
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+main > article > p > a {
+    color: black;
+    text-decoration: none;
+    background-color: var(--cor-01);
+}
+
+main > article > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor-05);
+}
+
+main > article > p > a::after {
+    content: '\1F525';
+}
+
+main > article > .voldemort > p > a {
+    color: black;
+    text-decoration: none;
+    background-color: var(--cor-01);
+}
+
+
+main > article > .voldemort > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor-05);
+}
+
+main > article > .voldemort > p > a::after {
+    content: '\1F525';
+}
+
+main > article >.voldemort > div.video {
+    background-color: var(--cor-05);
+    margin: 10px 0px 10px 0px;
+    padding-bottom: 58%;
+
+    position: relative;
+}
+
+main > article >.voldemort > div.video > iframe {
+    position: absolute;
+    top: 4%;
+    left: 3.5%;
+    width: 93%;
+    height: 93%;
+}
+
+main > article > picture > img {
+    width: 96%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+main > article > .voldemort > picture > img{
+    width: 96%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+main > article > .voldemort > p {
+    text-indent: 20px;
+    padding-left: 5px;
+}
+
+main > article > aside {
+    background-color: #42726a5b;
+    margin: 10px;
+    border: 1px solid var(--cor-05);
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+main > article > aside > h4 {
+    background-color: var(--cor-04);
+    color: var(--cor-00);
+    padding: 4px;
+}
+
+main > article > aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+main > article > aside > ul > li {
+    list-style-type: '\1F5F2\00A0';
+}
+
+footer {
+    background-color: var(--cor-05);
+    color: var(--cor-00);
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor-02);
+}
+
+footer > p > a:hover {
+    background-color: #0f6a59;
+    color: var(--cor-00);
+    transition-duration: 1s;
+    padding: 3px;
+    margin: 3px;
+}

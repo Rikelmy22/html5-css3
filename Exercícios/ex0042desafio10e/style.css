@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'digital';
+    src: url('fontes/Digital-Desolation-Plus.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'cripto';
+    src: url('fontes/Transformers\ Movie.ttf') format('truetype');
+}
+
+* {
+   line-height: 30px;
+   padding: 0px;
+   margin: 0px;
+}
+
+:root {
+    --cor-00:#fff;
+    --cor-01:#6472EE;
+    --cor-02:#1C31EB;
+    --cor-03:#1626B8;
+    --cor-04:#0D176B;
+    --cor-05:#2D336B;
+
+    --font-tittle: 'digital';
+    --font-subtittle: 'cripto';
+}
+
+body {
+    background-color: rgba(10, 21, 96, 0.426);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-04), var(--cor-02));
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px darkblue;
+}
+
+header > h1#tittle-principal {
+    font-family: var(--font-tittle);
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--cor-00);
+    text-shadow: 0px 0px 4px #000000;
+    font-style: normal;
+    padding-top: 10px;
+}
+
+header > p {
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--cor-00);
+    padding: 10px;
+}
+
+header > nav > a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: var(--cor-01);
+    border-radius: 3px;
+    border: 1px solid var(--cor-00);
+    font-family: sans-serif;
+}
+
+header > nav > a:hover {
+    transition-duration: 1s;
+    color: #000000;
+    border: 1px solid black;
+    background-color: var(--cor-00);
+    padding: 3.5px;
+}
+
+main {
+    background-color: var(--cor-00);
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0px auto 10px auto;
+    padding: 10px;
+    text-indent: 15px;
+}
+
+main > article > h1 , h2 , h3 {
+   font-family: var(--font-subtittle);
+   color: var(--cor-04) ;
+   border: 1px solid var(--cor-04);
+   box-shadow: inset 0px 0px 5px var(--cor-04);
+   max-width: 600px;
+   min-width: 320px;
+   display: block; 
+}
+
+main > article > p {
+   text-align: justify;
+   font-family: sans-serif;
+}
+
+main > article > p > a{
+    color: blue;
+    text-decoration: none;
+}
+
+main > article > p > a:hover {
+    text-decoration: underline;
+}
+
+main > article > p > a::after {
+    content: '\1F587';
+}
+
+main > article > picture > img {
+    display: block;
+    margin: auto;
+    width: 96%;
+    margin-bottom: 10px;
+}
+
+main > article >.video {
+    position: relative;
+    padding-bottom: 59%;
+    background-color: var(--cor-04);
+}
+
+main > article >.video > iframe {
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    width: 100%;
+    height: 93%;
+}
+
+main > article > aside {
+    background-color: var(--cor-02);
+    margin: 10px auto 10px auto;
+    font-family: sans-serif;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 0px 5px var(--cor-00);
+}
+
+main > article > aside > h4 {
+    background-color: var(--cor-04);
+    color: var(--cor-00);
+    font-family: var(--font-subtittle);
+    text-shadow: 1px 1px 7px #000000;
+    border-top-left-radius: 4px;
+    box-shadow: 0px 1px 6px var(--cor-03);
+}
+
+main > article > aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    color: var(--cor-00);
+    width: 40%;
+}
+
+main > article > aside > ul > li {
+    list-style-type: '\1F512';
+}
+
+main > article > aside > ul > li:hover {
+    list-style-type: '\1F511';
+}
+
+main > article > aside > ul > li > a {
+    text-decoration:none;
+    color: var(--cor-00);font-style: oblique;
+}
+
+main > article > aside > ul > li > a:hover {
+    content: '\1F511';
+}
+
+main > article > aside > ul > li:active {
+    list-style-type: '\1F513';
+}
+
+body > footer {
+    background-color: var(--cor-04);
+    text-align: center;
+    color: var(--cor-01);
+    font-family: sans-serif;
+}
+
+body > footer > p > a {
+    text-decoration: none;
+    color: var(--cor-00);
+}
+
+body > footer > p > a:hover {
+    color: #000000;
+    transition-duration: 1s;
+}
