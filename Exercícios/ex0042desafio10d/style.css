@@ -60,6 +60,7 @@ header > nav > a {
     text-decoration: none;
     margin-right: 20px;
     color: var(--cor-03);
+    margin-left: 10px;
 }
 
 header > nav > a:hover {
