@@ -104,7 +104,7 @@ main > article > p > a:hover{
 }
 
 main > article > p > a.externo::after {
-    content: '\1F517'
+    content: '\1F517';
 }
 
 main> article > h2 , h3 {
@@ -123,16 +123,17 @@ main > article > p {
 }
 
 main > article > .deusdaguerra > img {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: auto;
     width: 100%;
 }
 
 main > article > .atreus >  img {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: auto;
     width: 100%;
 }
+
 main > article > .kratos > .video {
     background-color: var(--cor-01);
     padding-bottom: 60%;
