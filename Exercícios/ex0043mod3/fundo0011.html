@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando SHORTHAND</title>
+    <style>
+        body {
+            height: 100vh;
+            /**background-color: black;
+            background-image: url(imagens/mulher-nadando.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;**/
+            background: black url(imagens/mulher-nadando.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        /**Deve-se sempre respeitar a sequência da shorthand porque se não a mesma não funcionará.
+        COLOR>IMAGEM>POSITION>REPEAT>SIZE>ATTACHMENT**/
+        main {
+            background-color: #fff;
+            min-width: 320px;
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Olá, mundo
+        </h1>
+        <p>
+            Continue tentando, as falhas fazem parte do processo.
+        </p>
+    </main>
+</body>
+</html>
