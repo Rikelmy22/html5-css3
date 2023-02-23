@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+}
+
+div.parallax {
+    background-image: url(imagens/códigos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh !important;
+    width: 99%;
+    display: block;
+    margin: auto;
+}
+
+main > section > h1 {
+    text-align: center;
+}
+
+main > section {
+    color: #726a6a;
+    background-color: #000;
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 700px;
+    line-height: 30px;
+    border: 1px solid #726a6a;
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 5px;
+    text-indent: 30px;
+    height: 50vh !important;
+    margin-top: 12.5%;
+    margin-bottom: 12.5%;
+}
+
+div.parallax-2 {
+    background-image: url(imagens/galaxia.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh !important;
+    width: 99%;
+    display: block;
+    margin: auto;
+}
+
+div.parallax-3 {
+    background-image: url(imagens/chuva.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh !important;
+    width: 99%;
+    display: block;
+    margin: auto;
+}
