@@ -28,8 +28,6 @@ main > section {
     margin: 0px auto;
     min-width: 320px;
     max-width: 700px;
-    line-height: 30px;
-    border: 1px solid #726a6a;
     font-family: sans-serif;
     text-align: justify;
     padding: 5px;
