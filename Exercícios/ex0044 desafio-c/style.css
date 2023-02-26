@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'siracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'passion';
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-01:'siracha';
+    --font-02:'passion';
+}
+
+body {
+    background-color: gray;
+}
+
