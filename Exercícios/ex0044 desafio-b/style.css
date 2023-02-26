@@ -43,7 +43,7 @@ header > h1 > a {
 main > .normal {
     font-size: 2em;
     font-family: var(--font-01);
-    padding: 80px 50px;
+    padding: 10vh 6vh;
 }
 
 main > .imagem-1 {
