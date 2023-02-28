@@ -6,53 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-     table,tr ,td  {
-        border: 1px solid black;
+    table, tr , td {
+        border: 2px solid black;
         border-collapse: collapse;
-        padding: 1vh;
+        height: 120px;
+        width: 400px;
     }
 
-    .row-obscure {
-        background-color: gray;
+    .center {
+        vertical-align: bottom;
+        
     }
     </style>
 </head>
 <body>
-    <h1>
-        Minha primeira tabela
-    </h1>
+   <h1>
+    Minha primeira tabela
+   </h1>
     <table>
-        <tr class="row-obscure">
-            <td>
-                A1
+        <tr>
+            <td class="center">
+            Produtos
             </td>
-            <td>
-                B1
+            <td class="center">
+            Notebook
             </td>
-            <td>
-                C1
+            <td class="center">
+            PS4
             </td>
         </tr>
         <tr>
-            <td>
-                A2
+            <td class="center">
+            Preços
             </td>
             <td>
-                B2
+            R$ 2.000,00
             </td>
             <td>
-                C2
+            R$ 2.400,00
             </td>
         </tr>
-        <tr class="row-obscure">
-            <td>
-                A3
+        <tr>
+            <td class="center">
+            Descontos
             </td>
             <td>
-                B3
+            R$ 500,00
             </td>
             <td>
-                C3
+            R$ 150,00  
             </td>
         </tr>
     </table>
