@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Completa</title>
     <style>
+     /*Este exercício possuí o fixamento de cabeçalho em relação a minha tabela*/
        table{
         font-family: sans-serif;
         width: 60vw;
         height: 80vh;
         margin: auto;
+        position: relative;
        }
 
-       table,tr ,td {
+       table, thead, th, tr, td {
         border: 1px solid black;
         border-collapse: collapse;
         padding: 4.5px;
@@ -22,6 +24,8 @@
        thead {
         font-weight: bolder;
         background-color: rgb(0, 13, 255);
+        position: sticky;
+        top: 0px;
        }
 
        .libertadores {
@@ -43,7 +47,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header>  <!--Tabela fixa-->
         <h1>
             Tabela do campeonato brasileiro 2022
         </h1>
@@ -52,30 +56,30 @@
         <table>
           <thead>
             <tr>
-                <td>
+                <th scope="col">
                     Clube
-                </td>
-                <td>
+                </th>
+                <th scope="col">
                     Pontos
-                </td>
-                <td>
+                </th>
+                <th scope="col">
                     Jogos
-                </td>
-                <td>
+                </th>
+                <th scope="col">
                     Vitórias
-                </td>
-                <td>
+                </th>
+                <th scope="col">
                     Empates
-                </td>
-                <td>
+                </th>
+                <th scope="col">
                     Derrotas
-                </td>
+                </th>
             </tr>
           </thead>
 
           <tbody>
              <tr class="libertadores">
-                 <td>
+                 <td scope ="row">
                      Palmeiras
                  </td>
                  <td>
@@ -95,7 +99,7 @@
                  </td>
              </tr>
              <tr class="libertadores">
-                 <td>
+                 <td scope ="row">
                      Internacional
                  </td>
                  <td>
@@ -115,7 +119,7 @@
                  </td>
              </tr>
              <tr class="libertadores">
-                 <td>
+                 <td scope ="row">
                      Fluminense
                  </td>
                  <td>
@@ -135,7 +139,7 @@
                  </td>
              </tr>
              <tr class="libertadores">
-                 <td>
+                 <td scope ="row">
                   Corinthians
                  </td>
                  <td>
@@ -155,7 +159,7 @@
                  </td>
             </tr>
              <tr class="libertadores">
-                 <td>
+                 <td scope ="row">
                     Flamengo
                  </td>
                  <td>
@@ -175,7 +179,7 @@
                  </td>
              </tr>
              <tr class="libertadores">
-                 <td>
+                 <td scope ="row">
                     Athletico-PR
                  </td>
                  <td>
@@ -195,7 +199,7 @@
                  </td>
              </tr>
              <tr class="pre-libertadores">
-                 <td >
+                 <td scope ="row">
                     Atlético-MG
                  </td>
                  <td>
@@ -215,7 +219,7 @@
                  </td>
             </tr>
             <tr class="pre-libertadores">
-                <td>
+                <td scope ="row">
                   Fortaleza
                 </td>
                  <td>
@@ -235,7 +239,7 @@
                  </td>
             </tr>
             <tr class="sul-americana">
-                 <td>
+                 <td scope ="row">
                    São Paulo
                  </td>
                  <td>
@@ -255,7 +259,7 @@
                  </td>
             </tr>
             <tr class="sul-americana">
-                <td>
+                <td scope ="row">
                   América-MG
                 </td>
                 <td>
@@ -275,7 +279,7 @@
                 </td>
             </tr>
             <tr class="sul-americana">
-                <td>
+                <td scope ="row">
                   Botafogo
                 </td>
                 <td>
@@ -295,7 +299,7 @@
                 </td>
             </tr>
             <tr class="sul-americana">
-                <td>
+                <td scope ="row">
                  Santos
                 </td>
                 <td>
@@ -315,7 +319,7 @@
                 </td>
             </tr>
             <tr class="sul-americana">
-                <td>
+                <td scope ="row">
                   Goiás
                 </td>
                 <td>
@@ -335,7 +339,7 @@
                 </td>
             </tr>
             <tr class="sul-americana">
-                <td>
+                <td scope ="row">
                   Bragantino
                 </td>
                 <td>
@@ -355,7 +359,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td scope ="row">
                   Coritiba
                 </td>
                 <td>
@@ -375,7 +379,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td scope ="row">
                   Cuiabá
                 </td>
                 <td>
@@ -395,7 +399,7 @@
                 </td>
             </tr>
             <tr class="rebaixamento">
-                <td>
+                <td scope ="row">
                   Ceará SC
                 </td>
                 <td>
@@ -415,7 +419,7 @@
                 </td>
             </tr>
             <tr class="rebaixamento">
-                <td>
+                <td scope ="row">
                   Atlético-GO
                 </td>
                 <td>
@@ -435,7 +439,7 @@
                 </td>
             </tr>
             <tr class="rebaixamento">
-                <td>
+                <td scope ="row">
                   Avaí
                 </td>
                 <td>
@@ -455,7 +459,7 @@
                 </td>
             </tr>
             <tr class="rebaixamento">
-                <td>
+                <td scope ="row">
                   Juventude
                 </td>
                 <td>
@@ -477,5 +481,10 @@
           </tbody>
         </table>
     </main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam earum quod atque ullam iure ab doloribus beatae tempora? Autem impedit fugiat ratione iure accusantium, error eveniet dolorem aperiam iusto.</p>
 </body>
 </html>
