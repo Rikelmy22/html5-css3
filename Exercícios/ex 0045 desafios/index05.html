@@ -5,36 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio de teste</title>
+    <style>
+        table, tr, th, td {
+            border: 2px solid black;
+            padding: 1vh;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+         
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        .inversão {
+            background-color: gray;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <table>
-        <tr>
-            <th>
-                Áreas
-            </th>
-            <th>
-                Disciplinas
-            </th>
-            <th>
-                Notas
-            </th>
-            <th>
-                Médias
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Nota 01
-            </th>
-            <th>
-                Nota 02
-            </th>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">
+                        Áreas
+                    </th>
+                    <th scope="col" rowspan="2">
+                        Disciplinas
+                    </th>
+                    <th scope="colgroup" colspan="2">
+                        Notas
+                    </th>
+                    <th scope="col" rowspan="2">
+                        Médias
+                    </th>
+                    </tr>
+                    <tr>
+                    <th scope="col">
+                        Nota 01
+                    </th>
+                    <th scope="col">
+                        Nota 02
+                    </th>
+            </thead>
         </tr>
         <tbody>
             <tr>
-               <td>
+               <th scope="rowgroup" rowspan="4">
                 Exatas
-               </td>
+               </th>
                <td>
                     Matemática
                </td>
@@ -87,19 +107,19 @@
                 0
                 </td>
                 <td>
-                9
+                0
                 </td>
             </tr>
             <tr>
-                <th class="inversão">
+                <th scope="row" colspan="4" class="inversão">
                    Média de exatas
                 </th>
-                <td>
+                <td class="inversão">
                     0
                 </td>
             </tr>
             <tr>
-                <th>
+                <th scope="rowgroup" rowspan="4">
                     Humanas
                 </th>
                 <td>
@@ -130,10 +150,39 @@
                 </td>
             </tr>
             <tr>
-                <th class="inversão">
+                <td>
+                    Português
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Arte
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <th scope="
+                row" colspan="4" class="inversão">
                     Média de Humanas
                 </th>
-                <td>
+                <td class="inversão"> 
                     0
                 </td>
             </tr>
