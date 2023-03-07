@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de colunas com colgroup</title>
+    <style>
+        table {
+            border: 1px solid black;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            border-collapse: collapse;
+        }
+        
+        thead, th {
+            border: 1px solid black;
+            background-color: rgba(128, 126, 126, 0.766);
+            color: #fff;
+            border-collapse: collapse;
+            padding: 0.5vh;
+        }
+
+        tbody, tr, td {
+            border: 1px solid black;
+            padding: 1vh;
+        }
+
+        .cnomes {
+            background-color: rgba(0, 0, 255, 0.249);
+        }
+        
+       .csexo {
+        background-color: rgba(0, 0, 0, 0.293);
+       }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnomes">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissão">
+        </colgroup>
+       <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+       </thead>
+        <tbody>
+            <tr>
+                <td>Manuela</td>
+                <td>27</td>
+                <td>Feminino</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>21</td>
+                <td>Masculino</td>
+                <td>Nulo</td>
+            </tr>
+            <tr>
+                <td>Lúcia</td>
+                <td>18</td>
+                <td>Feminino</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Jhon </td>
+                <td>25</td>
+                <td>Masculino</td>
+                <td>Mecânico</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

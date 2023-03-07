@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destacamento de coluna com colgroup</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+
+        thead, th {
+            background-color: rgba(128, 128, 128, 0.59);
+            color: #fff;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-weight: bolder;
+            text-align: center;
+            padding: 2vh;
+        }
+
+        tbody, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 1vh;
+        }
+
+        .Cteams {
+            background-color: rgba(0, 0, 139, 0.321);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="Cteams">
+            <col class="Cvictorys">
+            <col class="Cdefeats">
+            <col class="Cties">
+            <col class="Cgoaldifference">
+        </colgroup>
+        <thead>
+           <tr>
+            <th scope="col">Times</th>
+            <th scope="col">Vitórias</th>
+            <th scope="col">Derrotas</th>
+            <th scope="col">Empates</th>
+            <th scope="col">Saldo de gols</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>25</td>
+                <td>4</td>
+                <td>9</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+                <td>24</td>
+                <td>5</td>
+                <td>9</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+                <td>20</td>
+                <td>7</td>
+                <td>11</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td>Santa Cruz</td>
+                <td>17</td>
+                <td>10</td>
+                <td>11</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Paisandu</td>
+                <td>19</td>
+                <td>9</td>
+                <td>10</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Remo</td>
+                <td>26</td>
+                <td>7</td>
+                <td>5</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>Corinthians</td>
+                <td>11</td>
+                <td>20</td>
+                <td>7</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Cruzeiro</td>
+                <td>39</td>
+                <td>10</td>
+                <td>8</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Vasco</td>
+                <td>45</td>
+                <td>20</td>
+                <td>12</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Juventude</td>
+                <td>34</td>
+                <td>10</td>
+                <td>30</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
