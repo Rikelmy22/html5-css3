@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        table, thead, th, td {
+            border: 1px solid black;
+            padding: 40px;
+            border-collapse: collapse ;
+        }
+        #container {
+            overflow-x: auto;
+        } 
+        tbody> tr> td:nth-child(odd) {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Preços</th>
+                    <th>Descontos</th>
+                    <th>Lojas</th>
+                    <th>Concorrentes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Notebook</td>
+                    <td>R$ 1.000,00</td>
+                    <td>R$ @200,00</td>
+                    <td>Casas Bahia e Americanas</td>
+                    <td>Magalu</td>
+                </tr>
+                <tr>
+                    <td>Televisores</td>
+                    <td>R$ 4.000,00</td>
+                    <td>R$ 400,00</td>
+                    <td>Ceo</td>
+                    <td>Amazon</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
