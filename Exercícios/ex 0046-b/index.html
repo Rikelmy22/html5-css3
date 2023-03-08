@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe de navegação</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.24);
+        }
+        
+        main {
+            max-width: 800px;
+            min-width: 320px;
+            margin: auto;
+        }
+        /*O iframe interno só funciona por causa do name do iframe colocado no target blank*/
+        iframe {
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <h1>Teste de navegação interativa de iframe interno</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque iste sit quo eaque nesciunt? Autem qui laudantium quos sint! Non, porro sed. Ipsam mollitia enim excepturi at sunt. Aspernatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aut deleniti dolorum. Molestiae molestias nulla distinctio amet commodi fugiat reprehenderit consectetur blanditiis placeat, unde consequatur laboriosam saepe eaque corrupti porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta necessitatibus totam quod nobis neque id magni accusantium praesentium consequuntur architecto fugiat et, libero aperiam, modi quas quibusdam eligendi ex officiis.
+        <ul>
+            <li><a href="paginas-externas/pag02.html" target="inside frame">Página 2</a></li>
+            <li><a href="paginas-externas/pag03.html" target="inside frame">Página 3</a></li>
+            <li><a href="paginas-externas/pag04.html" target="inside frame">Página 4</a></li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nisi tenetur minima possimus accusamus, animi pariatur, ea veritatis, consequatur itaque dolorum reprehenderit numquam quam odio eius distinctio nihil? Sed, eum.
+        </p>
+       <!--ao clicar no link da lista o usuário sera redirecionado para o iframe com a página que está indexada na âncora-->
+        <iframe height="500px" width="500px" name="inside frame" src="" frameborder="0">
+    
+        </iframe>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit omnis error maxime veniam deleniti? Nostrum aut animi velit sapiente totam molestias quisquam ut veritatis aspernatur amet! Numquam, aspernatur. Ab!
+        </p>
+</main>
+</body>
+</html>
