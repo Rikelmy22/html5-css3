@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo formulário</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Meu segundo formulário
+    </h2>
+    <!--O action é o destinatário do meu script para os dados estão sendop enviados e o autocomplete é a recomendação da etiqueta-->
+    <form action="exemple.php" autocomplete="off">
+        <!--Usar sempre a tag label para criar uma ligação entre o html e a etiqueta em que os dados estão-->
+        <p>
+            <label for="idate">Digite sua data de nascimento:</label> <input type="date" name="date" id="idate">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha">
+        </p>
+        <!--O input de tio subimit sempre será meu enter de enviar os dados para o script hospedado-->
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
