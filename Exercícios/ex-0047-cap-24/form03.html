@@ -27,13 +27,14 @@
     <form method="post" action="destinatario.php">
         <p>
             <!--Label faz uma ligação entre a questão e a etiqueta.-->
-           <label for="ie-mail">Digite seu e-mail:</label><input type="email" name="email" id="ie-mail">
+           <label for="ie-mail">E-mail:</label><input type="email" name="email" id="ie-mail" placeholder="digite seu e-mail" minlength="7" maxlength="25" size="18" required >
         </p>
         <p>
-            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha">
+            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" minlength="3" maxlength="10" placeholder="digite sua senha" size="15" required>
         </p>
         <!--Submit é um input de confirmação.-->
-        <input type="submit" value="Confirmar">
+        <!--O input de type reset serve para resetar os dados do meu formulário.-->
+        <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar dados">
     </form>
 </body>
 </html>
