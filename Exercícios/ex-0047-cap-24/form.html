@@ -19,14 +19,22 @@
 </head>
 <body>
     <h1>Meu primeiro formulário básico</h1>
-   <form action="destinatario.js" autocomplete="off">
+    <!--O nome do action é de extrema importância para o envio dos dasdos serem concluídos.-->
+    <!--O autocomplete pode ser usado tanto no action quanto nos inputs para dizer ao navegador que tipo de sugestão será usada.-->
+    <!--O placeholder é uma dicapara o usuário para completar a caixa de etiqueta.-->
+    <!--minlenght= minímo de digítos necessários na caixa. maxlength é o número máximo de digítos suportados para a etiqueta.-->
+    <!--size é o tamanho da caixa.-->
+    <!--required o formulário só será enviado depois destas caixas com essa função ser preenchidas.-->
+   <form action="destinatario.php" autocomplete="off" method="post">
     <p>
-       <label for="ie-mail">Digite seu e-mail: </label><input type="email" name="e-mail "id="ie-mail">
+       <label for="ie-mail">E-mail: </label>
+       <input type="email" name="e-mail "id="ie-mail" placeholder="digite seu e-mail" minlength="7" maxlength="28" size="15" required>
     </p>
     <p>
-       <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha">
+       <label for="isenha">Senha:</label>
+       <input type="password" name="senha" id="isenha" placeholder="digite sua melhor senha" minlength="3" maxlength="8">
     </p>
-    <input type="submit" value="Confirmar">
+    <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar">
    </form>
 </body>
 </html>

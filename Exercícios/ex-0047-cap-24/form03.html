@@ -21,17 +21,18 @@
     <h3>
         Login
     </h3>
-    <!--Action define o caminho do script que rodará no meu formulário-->
-    <!--Metódo post é necessário para não deixar os dados do usuário a mostra na url-->
-    <form method="post" action="arquivo.php">
+    <!--Action define o caminho do script que rodará no meu formulário.-->
+    <!--O nome do action é de extrema importância para o envio dos dados do meu uisuário.-->
+    <!--Metódo post é necessário para não deixar os dados do usuário a mostra na url.-->
+    <form method="post" action="destinatario.php">
         <p>
-            <!--Label faz uma ligação entre a questão e a etiqueta-->
+            <!--Label faz uma ligação entre a questão e a etiqueta.-->
            <label for="ie-mail">Digite seu e-mail:</label><input type="email" name="email" id="ie-mail">
         </p>
         <p>
             <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha">
         </p>
-        <!--Submit é um input de confirmação-->
+        <!--Submit é um input de confirmação.-->
         <input type="submit" value="Confirmar">
     </form>
 </body>

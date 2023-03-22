@@ -15,16 +15,18 @@
     <h2>
         Meu segundo formulário
     </h2>
-    <!--O action é o destinatário do meu script para os dados estão sendop enviados e o autocomplete é a recomendação da etiqueta-->
-    <form action="exemple.php" autocomplete="off">
-        <!--Usar sempre a tag label para criar uma ligação entre o html e a etiqueta em que os dados estão-->
+    <!--O action é o destinatário do meu script para os dados estão sendo enviados e o autocomplete é a recomendação da etiqueta.-->
+    <!--O nome do action é de extrema importância para o envio dos dados do usuário do formulário.-->
+    <form action="destinatario.php" autocomplete="off" method="post">
+        <!--Usar sempre a tag label para criar uma ligação entre o html e a etiqueta em que os dados estão.-->
         <p>
-            <label for="idate">Digite sua data de nascimento:</label> <input type="date" name="date" id="idate">
+            <label for="idate">Digite sua data de nascimento:</label>
+            <input type="date" name="date" id="idate" placeholder="data" size="15" minlength="8" maxlength="15">
         </p>
         <p>
-            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha">
+            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" placeholder="senha" size="10" min="3" maxlength="10">
         </p>
-        <!--O input de tio subimit sempre será meu enter de enviar os dados para o script hospedado-->
+        <!--O input de tipo subimit sempre será meu enter de enviar os dados para o script hospedado.-->
         <input type="submit" value="Confirmar">
     </form>
 </body>
