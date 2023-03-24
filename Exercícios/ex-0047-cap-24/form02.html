@@ -9,6 +9,7 @@
         * {
             font-family: sans-serif;
         }
+        /*Estilização*/
     </style>
 </head>
 <body>
@@ -19,16 +20,21 @@
     <!--O nome do action é de extrema importância para o envio dos dados do usuário do formulário.-->
     <form action="destinatario.php" autocomplete="off" method="post">
         <!--Usar sempre a tag label para criar uma ligação entre o html e a etiqueta em que os dados estão.-->
-        <p>
-            <label for="idate">Digite sua data de nascimento:</label>
-            <input type="date" name="date" id="idate" placeholder="data" size="15" minlength="8" maxlength="15" required>
-        </p>
-        <p>
-            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" placeholder="senha" size="10" minlength="3" maxlength="10" required>
-        </p>
-        <!--O input de tipo subimit sempre será meu enter de enviar os dados para o script hospedado.-->
-        <!--Input de type reset serve para resetar os meus dados do formulário e o value é o que vai ficar visível no botão.-->
-        <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar dados">
+        <fieldset>
+            <legend>
+                Dados de idade
+            </legend>
+            <p>
+                <label for="idate">Digite sua data de nascimento:</label>
+                <input type="date" name="date" id="idate" placeholder="data" size="15" minlength="8" maxlength="15" required>
+            </p>
+            <p>
+                <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" placeholder="senha" size="10" minlength="3" maxlength="10" required>
+            </p>
+            <!--O input de tipo subimit sempre será meu enter de enviar os dados para o script hospedado.-->
+            <!--Input de type reset serve para resetar os meus dados do formulário e o value é o que vai ficar visível no botão.-->
+            <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar dados">
+        </fieldset>
     </form>
 </body>
 </html>

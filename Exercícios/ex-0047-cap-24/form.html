@@ -26,15 +26,20 @@
     <!--size é o tamanho da caixa.-->
     <!--required o formulário só será enviado depois destas caixas com essa função ser preenchidas.-->
    <form action="destinatario.php" autocomplete="off" method="post">
-    <p>
-       <label for="ie-mail">E-mail: </label>
-       <input type="email" name="e-mail "id="ie-mail" placeholder="digite seu e-mail" minlength="7" maxlength="28" size="15" required>
-    </p>
-    <p>
-       <label for="isenha">Senha:</label>
-       <input type="password" name="senha" id="isenha" placeholder="digite sua melhor senha" minlength="3" maxlength="8">
-    </p>
-    <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar">
+    <fieldset>
+        <legend>
+            Dados criptografados
+        </legend>
+        <p>
+           <label for="ie-mail">E-mail: </label>
+           <input type="email" name="e-mail "id="ie-mail" placeholder="digite seu e-mail" minlength="7" maxlength="28" size="15" required>
+        </p>
+        <p>
+           <label for="isenha">Senha:</label>
+           <input type="password" name="senha" id="isenha" placeholder="digite sua melhor senha" minlength="3" maxlength="8">
+        </p>
+        <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar">
+    </fieldset>
    </form>
 </body>
 </html>

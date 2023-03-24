@@ -15,26 +15,35 @@
             border: 1px solid black;
             width: 400px;
         }
+        /* Estilo para meu html */
     </style>
 </head>
 <body>
-    <h3>
+    <h1>
         Login
-    </h3>
+    </h1>
     <!--Action define o caminho do script que rodará no meu formulário.-->
     <!--O nome do action é de extrema importância para o envio dos dados do meu uisuário.-->
     <!--Metódo post é necessário para não deixar os dados do usuário a mostra na url.-->
     <form method="post" action="destinatario.php">
-        <p>
-            <!--Label faz uma ligação entre a questão e a etiqueta.-->
-           <label for="ie-mail">E-mail:</label><input type="email" name="email" id="ie-mail" placeholder="digite seu e-mail" minlength="7" maxlength="25" size="18" required >
-        </p>
-        <p>
-            <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" minlength="3" maxlength="10" placeholder="digite sua senha" size="15" required>
-        </p>
-        <!--Submit é um input de confirmação.-->
-        <!--O input de type reset serve para resetar os dados do meu formulário.-->
-        <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar dados">
+        <!--Fieldset é um comando para empacotar todos os dados do formulário-->
+      <fildset>
+        <!--Legend é apenas um rótulo para meus dados-->
+          <legend>
+            Contato
+          </legend>
+            <p>
+                <!--Label faz uma ligação entre a questão e a etiqueta.-->
+               <label for="ie-mail">E-mail:</label><input type="email" name="email" id="ie-mail" placeholder="digite seu e-mail" minlength="7" maxlength="25" size="18" required >
+            </p>
+            <p>
+                <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" minlength="3" maxlength="10" placeholder="digite sua senha" size="15" required>
+            </p>
+            <!--Submit é um input de confirmação.-->
+            <!--O input de type reset serve para resetar os dados do meu formulário.-->
+            <input type="submit" value="Confirmar"><br><input type="reset" value="Apagar dados">
+      </fildset>>
+
     </form>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com telefone</title>
+</head>
+<body>
+   <form action="script.php" method="post">
+    <fieldset>
+        <legend>Telefone number</legend>
+        <p>
+            <label for="inumber">Número</label><input type="tel" pattern="^$/d{4}-/d{4}$" name="number" id="inumber" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar dados">
+        </p>
+    </fieldset>
+   </form>
+</body>
+</html>
