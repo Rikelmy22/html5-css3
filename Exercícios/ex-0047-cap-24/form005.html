@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário em html5</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <header>
+        <h1>
+            Meu quarto teste de formulário
+        </h1>
+    </header>
+    <div>
+       <form action="script.php" method="post">
+        <div>
+            <label for="idate">Data de aniversário:</label><input type="date" name="date" id="idate">
+        </div>
+        <div>
+            <label for="iname">Nome de usuário:</label><input type="text" name="name" id="iname" autocomplete="on" placeholder="digite seu nick" minlength="3" maxlength="20" size="20">
+        </div>
+        <input type="submit" value="Enviar"><br>
+        <input type="reset" value="Limpar">
+       </form>
+    </div>
+</body>
+</html>
