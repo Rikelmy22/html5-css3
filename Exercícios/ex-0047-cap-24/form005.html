@@ -19,14 +19,23 @@
     </header>
     <div>
        <form action="script.php" method="post">
-        <div>
-            <label for="idate">Data de aniversário:</label><input type="date" name="date" id="idate">
-        </div>
-        <div>
-            <label for="iname">Nome de usuário:</label><input type="text" name="name" id="iname" autocomplete="on" placeholder="digite seu nick" minlength="3" maxlength="20" size="20">
-        </div>
-        <input type="submit" value="Enviar"><br>
-        <input type="reset" value="Limpar">
+        <!--Novo comando Fieldset e legend apresentado e criado para englobar todos os dados do meu formulário e os resetnaod para unma única box.-->
+        <fieldset>
+            <legend>Dados necessários</legend>
+            <div>
+                <p>
+                    <label for="idate">Data de aniversário:</label><input type="date" name="date" id="idate">
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="iname">Nome de usuário:</label><input type="text" name="name" id="iname" autocomplete="on" placeholder="digite seu nick" minlength="3" maxlength="20" size="20">
+                </p>
+             </div>
+      
+             <input type="submit" value="Enviar"><br>
+             <input type="reset" value="Limpar">
+        </fieldset>
        </form>
     </div>
 </body>
