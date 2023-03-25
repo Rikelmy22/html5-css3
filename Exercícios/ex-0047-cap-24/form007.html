@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de checkbox e radio</title>
+    <style>
+        body {
+            background-color: rgba(194, 190, 190, 0.3);
+            font-family: sans-serif;
+        }
+
+        legend {
+            font-weight: bolder;
+        }
+    
+    </style>
+</head>
+<body>
+    <form action="script.php" method="post">
+        <fieldset>
+          <legend>Comida</legend>
+          <!--O input de tipo checkbox é caracterizada pela variação possível de marcações.-->
+          <label for="isal">Salada </label><input type="checkbox" name="sal" id="isal">
+          <label for="ifeijoada">Feijoada</label><input type="checkbox" name="feijoada" id="ifeijoada">
+          <label for="ilasa">Lasanha</label><input type="checkbox" name="lasa" id="ilasa">
+        </fieldset>
+        <fieldset>
+          <legend>Sexo</legend>
+          <!--Do tipo radio é definida pela opção única de marcação e não pode ser apagada.-->
+          <label for="imas">Masculino</label><input type="radio" name="sexo" id="imas">
+          <label for="ifem">Feminino</label><input type="radio" name="sexo" id="ifem">
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Deletar">
+    </form>
+</body>
+</html>

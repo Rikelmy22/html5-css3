@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de input-checkbox/radio</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: sans-serif;
+        }
+
+        legend {
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <form action="script.php" method="post">
+            <fieldset>
+                <legend>ESTUDOS</legend>
+                 <label for="ihtml">Html</label><input type="checkbox" name="html" id="ihtml">
+                 <label for="icss">CSS</label><input type="checkbox" name="css" id="icss">
+                 <label for="ijvs">Javascript</label><input type="checkbox" name="jvs" id="ijvs">
+            </fieldset>
+            <!--Foco no id dos inputs.-->
+            <fieldset>
+                <legend>LIVRO</legend>
+                <label for="iadw">A arte da guerra</label><input type="radio" name="livro" id="iadw"><br>
+                <label for="iacu">A chave mestra do universo</label><input type="radio" name="livro" id="iacu">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
