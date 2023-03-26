@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de elementos váriaveis</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        legend {
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        form {
+            display: block;
+            margin: auto;
+            width: 500px;
+        }
+
+        div {
+            display: inline-block;
+            width: 247px;
+        }
+
+        div#deleted {
+            text-align: end;
+        }
+
+    </style>
+</head>
+<body>
+   <main>
+    <h1>
+        LOGIN
+    </h1>
+    <form action="destinatario.php" method="post">
+        <fieldset>
+            <legend>Dados de entrada</legend>
+            <p>
+                <label for="iname">Nome de usuário:</label><input type="text" name="name" id="iname" size="23" minlength="4" maxlength="15" placeholder="Digite seu nome de usuário" required>
+            </p>
+            <p>
+                <label for="inumber">Número de telefone:</label><input type="number" name="number" id="inumber" minlengtgh="5" maxlength="10" placeholder="Digite seu número" required autocomplete="no">
+            </p>
+            <p>
+                <label for="ie-mail">E-mail:</label><input type="email" name="e-mail" id="ie-mail" size="33" minlength="10" maxlength="30" placeholder="Digite seu melhor e-mail" required>
+            </p>
+            <p>
+                <label for="isen">Senha:</label><input type="password" name="sen" id="isen" size="33" placeholder="Digite sua melhor senha" minlength="4" maxlength="20" required>
+            </p>
+        </fieldset>
+            <div id="enter">
+                <p>
+                    <input type="submit" value="ENTRAR">
+                </p>
+            </div>
+            <div id="deleted">
+                <p>
+                    <input type="reset" value="APAGAR">
+                </p>
+            </div>
+    </form>
+   </main>
+</body>
+</html>
