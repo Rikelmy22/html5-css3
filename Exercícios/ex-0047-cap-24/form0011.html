@@ -16,6 +16,7 @@
         <fieldset>
             <legend>Estados e profissãos</legend>
             <p>
+                <!--Select abre uma gama de opções para você escolher uma como um script-->
                 <label for="iest">Estados: </label><select name="estado" id="iest">
                     <option value="0" selected>---</option>
                     <option value="AC">ACRE</option>
@@ -47,8 +48,9 @@
                     <option value="TO">TOCANTINS</option>
                 </select>
             </p>
-
+             
             <p>
+                <!--No datalist nos temos a vantagem de poder escrever na estiqueta se não tiver a opção desejada.-->
                 <label for="iprof">Profissões:</label>
                 <input type="text" name="prof" id="iprof
                 " list="liprof"> 
@@ -56,6 +58,7 @@
                <option>Pintor</option>
                <option>Desenvolvedor</option>
                <option>Mecânico</option>
+               <option>Médico</option>
                 </datalist>
             </p>
 
