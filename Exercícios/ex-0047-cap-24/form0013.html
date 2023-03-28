@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento OUTPUT</title>
+</head>
+<body>
+    <form action="destinatario.php" method="post">
+        <fieldset>
+            <legend>
+                Output
+            </legend>
+            <p>
+                <label for="inum1">Número primário:</label>
+                <input type="number" name="num" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="inum2">Número secundário:</label>
+                <input type="number" name="num" id="inum2"  oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma dos números:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Deletar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

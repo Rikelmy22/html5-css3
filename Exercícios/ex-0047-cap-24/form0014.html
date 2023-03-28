@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de OUTPUT</title>
+</head>
+<body>
+    <form action="destinatario.php" method="post">
+        <fieldset>
+            <legend>Rodando um script interno</legend>
+            <!--O script adicionado é Javascript-->
+            <p>
+                <label for="iesc">Escala:</label><input type="range" name="esc" id="iesc" value="0" required oninput="iscroll.innerHTML = Number (iesc.value)">
+                <label for="iscroll"></label>
+                <output name="scroll" id="iscroll">0</output>
+            </p>
+            <p>
+             <input type="submit" value="Enviar">
+             <input type="reset" value="Deletar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
