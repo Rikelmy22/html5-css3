@@ -1,3 +1,21 @@
 @charset "UTF-8";
 
 /* Estilos para ser impresso em outro modelo de media query */
+
+* {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Não mostrar o cabeçalhopo no conteúso impresso */
+header > nav {
+    display: none;
+}
+
+main {
+    line-height: 30px;
+}
+
+main > article ::after {
+    content: 'Arquivo impresso no curso de html e css pelo site www.cursoemvideo.com.br';
+}
