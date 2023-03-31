@@ -28,7 +28,7 @@ header > h1 {
 
 header > nav > ul > li {
     background-color: gray;
-    display:inline-block;
+    display: inline-block;
     margin: 50px 10px;
     border: 1px solid #000;
 }
