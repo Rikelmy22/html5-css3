@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Estilo da página principal */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #233eff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    padding: 10px;
+}
