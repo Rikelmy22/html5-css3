@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Declarando as mediaqueries com um css interno(Recomendado para projetos menores)-->
-    <style>
+@charset "UTF-8";
+
     /* Não precisa declarar o media All nas mediaqueires porque todos os arquivos estão rodando no mesmo estilo */
     /* Estilo da página principal */
 
@@ -34,7 +28,7 @@
     /* Configurações para o tipo de tela no modo retrato (portrait) */
     @media  screen and (orientation: portrait) {
         body {
-    background-image: url(imagens/cev-portrait.jpg);
+    background-image: url(../imagens/cev-portrait.jpg);
     background-position: center bottom;
     }
     }
@@ -42,15 +36,7 @@
     /* Configurações para o tipo de tela no modo paisagem (landscape) */
      @media screen and (orientation: landscape) {
         body {
-    background-image: url(imagens/cev-landscape.jpg);
+    background-image: url(../imagens/cev-landscape.jpg);
     background-position: left bottom;
     }
      }
-    </style>
-</head>
-<body>
-    <h1> 
-        Mude a imagem apresentada com a rotação da tela do seu celular.
-    </h1>
-</body>
-</html>
