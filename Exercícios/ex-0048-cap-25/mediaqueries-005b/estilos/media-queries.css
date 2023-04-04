@@ -1,3 +1,61 @@
 @charset "UTF-8";
 
-/*  */
+/* Realocando todas as medias queries em um único arquivo css para otimização */
+
+
+/* Media query para impressoras */
+@media print {
+
+    main {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        border: 1px solid black;
+    }
+
+    #tel {display: none;}
+    #tab {display: none;}
+    #pri {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/* Media query para tablets */
+@media screen and (min-width:768px) and (max-width:992px){
+    body {
+        background: url(../imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #tel {display: none;}
+    #tab {display: block;}
+    #pri {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/* Media query para desktops */
+@media screen and (min-width:992px) and (max-width:1200px){
+    body {
+        background: url(../imagens/back-pc.jpg);
+    }
+
+    #tel {display: none;}
+    #tab {display: none;}
+    #pri {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+/* Media query para televisores */
+@media screen and (min-width:1200px) and (max-width:5000px){
+    body {
+        background: url(../imagens/back-tv.jpg);
+    }
+
+    #tel {display: none;}
+    #tab {display: none;}
+    #pri {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
