@@ -10,3 +10,88 @@ Desktops: de 992px até 1200px
 Telas maiores: Acima de 1200px
 */
 
+/* Mediaquery para impressoras */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background: black url(../imagens/back-print.jpg);
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+    h1 {
+        font-weight: bolder;
+    }
+
+    #tel {display: none;}
+
+    #tab {display: none;}
+    
+    #pri {display: block;}
+    
+    #pc {display: none;}
+    
+    #tv {display: none;}
+    
+    main::after {
+        content: 'Teste de mediaquery proposto pelo professor guanabara';
+    }
+}
+
+/* Mediaquery para tablet */
+@media  screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: black url(../imagens/back-tablet.jpg);
+    }
+   
+    #tel {display: none;}
+
+    #tab {display: block;}
+    
+    #pri {display: none;}
+    
+    #pc {display: none;}
+    
+    #tv {display: none;}
+}
+
+
+/* Mediaquery para desktops */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: black url(../imagens/back-pc.jpg);
+    }
+   
+    #tel {display: none;}
+
+    #tab {display: none;}
+    
+    #pri {display: none;}
+    
+    #pc {display: block;}
+    
+    #tv {display: none;}
+}
+
+/* Mediaquery para televisores e tela maiores */
+
+@media screen and (min-width: 1200px) and (max-width: 4000px){
+    body {
+        background: black url(../imagens/back-tv.jpg);
+    }
+   
+    #tel {display: none;}
+
+    #tab {display: none;}
+    
+    #pri {display: none;}
+    
+    #pc {display: none;}
+    
+    #tv {display: block;}
+}
