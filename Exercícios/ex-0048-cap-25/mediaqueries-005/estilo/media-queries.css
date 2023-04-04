@@ -1,3 +1,12 @@
 @charset "UTF-8";
 
-/* Configuraçoes das media queries para telas de tamanhos diversos */
+/* Todas as demais mídias */
+/* Tipos de device breakpoints:
+
+Pequenas telas:até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktops: de 992px até 1200px
+Telas maiores: Acima de 1200px
+*/
+
