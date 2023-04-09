@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site mobile first</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1 id="principal">
             Ransomware
         </h1>
-        <span id="menu" class="material-icons">
+        <span id="menu" class="material-icons" onclick="clickMenu()">
             menu
         </span>
         <menu id="items">
@@ -46,5 +47,22 @@
             Dados coletados no site <a href="#">Techtudo.com.br</a>.
         </p>
     </footer>
+    <!--Teste de tela e menu que extrai e se compacta-->
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block')
+            {
+                items.style.display = 'none'
+            }
+            else (items.style.display = 'block')
+        }
+
+        function mudouTamanho() {
+            if(window.innerwidth >= 768) {
+                items.style.display = 'block'
+            }
+            else (items.style.display = 'none')
+        }
+    </script>
 </body>
 </html>

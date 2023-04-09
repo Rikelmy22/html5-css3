@@ -33,6 +33,10 @@ header > #principal {
     padding: 20px;
 }
 
+header > menu {
+    display: none;
+}
+
 header > menu > ul > li {
     list-style-type: none;
 }
@@ -56,8 +60,18 @@ header > menu > ul > li > a:hover {
     text-shadow: 0px 0px 2px var(--color-four);
 }
 
-spanoip9#menu {
-    back
+#menu {
+    display: block;
+    background-color: var(--color-one);
+    color: var(--color-four);
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#menu:hover {
+    background-color: var(--color-four);
+    color: var(--color-one);
 }
 
 main {
@@ -100,3 +114,4 @@ footer > p > a {
 footer > p > a:hover {
     text-decoration: underline;
 }
+

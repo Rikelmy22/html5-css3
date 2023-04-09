@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Media query para outros dispositivos */
+
+@media screen and (min-width: 768px){
+    #menu {
+        display: none;
+    }
+    
+    header > menu  {
+        display: block;
+    }
+
+    header > menu > ul > li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    header > menu > ul > li > a {
+        padding: 10px;
+    }
+
+    header > menu > ul > li > a:hover {
+        background-color: var(--color-two);
+        color: var(--color-one);
+        transition-duration: 0.4s;
+        text-shadow: 0px 0px 2px var(--color-four);
+        border: none;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+
