@@ -56,6 +56,10 @@ header > menu > ul > li > a:hover {
     text-shadow: 0px 0px 2px var(--color-four);
 }
 
+spanoip9#menu {
+    back
+}
+
 main {
     background-color: rgba(255, 255, 255, 0.588);
     width: 92vw;
