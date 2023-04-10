@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de conhecimento</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1 id="primario">
             Back door
         </h1>
-        <menu>
+        <span id="menu" class="material-icons" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="items">
             <ul>
                 <li><a href="#">Teste 1</a></li>
                 <li><a href="#">Teste 2</a></li>
@@ -43,5 +48,23 @@
             Créditos: <a href="technoblog.net">Technoblog</a>.
         </p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block')
+            {
+                items.style.display = 'none'
+            }
+            else (items.style.display = 'block')
+        }
+        function mudouoTamanho() {
+            if (window.innerWidth >= 768) {
+                items.style.display = 'block'
+            }
+            else {
+                items.style.display.none = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
