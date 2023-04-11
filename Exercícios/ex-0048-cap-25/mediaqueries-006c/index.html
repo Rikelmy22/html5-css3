@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de conhecimento</title>
+    <!--Comando para rodar o logo de menu-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Configuração do css para mobile first-->
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <!--Media queria para telas maiores-->
     <link rel="stylesheet" href="styles/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()" >
     <header>
         <h1>
             Estoicismo
         </h1>
-        <menu>
+        <span id="menu" class="material-icons" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="items">
            <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Fale conosco</a></li>
@@ -40,5 +47,19 @@
             Somos eternos aprendizes de nós mesmos
         </p>
     </footer>
+    <script>
+        function clickMenu() {
+            if(items.style.display == 'block') {
+                items.style.display = 'none'
+            }
+            else(items.style.display = 'block')
+        }
+        function onresize() {
+            if(window.innerWidth >= 768) {
+                items.style.display = 'block'
+            }
+            else(items.style.display = 'none')
+        }
+    </script>
 </body>
 </html>

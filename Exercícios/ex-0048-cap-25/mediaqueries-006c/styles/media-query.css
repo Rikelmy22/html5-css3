@@ -3,5 +3,23 @@
 /* Media query para se adaptar a telas maiores */
 
 @media screen and (min-width: 768px){
+    header > span#menu {
+        display: none;
+    }
+/* Propriedade important é para que o css priorise o comando selecionado para ser executado */
+    menu {
+        display: block !important;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        border-left: 0.5px solid black;
+        border-right: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        margin: 0px 5px 5px 5px;
+    }
     
+   main {
+        width: 700px;
+   }
 }
