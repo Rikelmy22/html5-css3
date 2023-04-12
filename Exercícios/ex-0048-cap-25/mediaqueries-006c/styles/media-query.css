@@ -6,7 +6,7 @@
     header > span#menu {
         display: none;
     }
-/* Propriedade important é para que o css priorise o comando selecionado para ser executado */
+/* Propriedade !important é para que o css priorise o comando selecionado para ser executado */
     menu {
         display: block !important;
     }
