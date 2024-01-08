@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade FLEX GROW</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }          
+
+        #conteiner {
+            display: flex;
+            width: 800px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        .item { 
+            width: 100px;
+            background-color: gray;
+            text-align: center;
+            border: 1px solid white;
+            flex-grow: 1;
+        }
+        
+        .item2{
+        flex-grow: 2;
+        }
+
+        .item3{
+        flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item">01</div>
+        <div class="item item2">02</div>
+        <div class="item item3">03</div>
+        <div class="item">04</div>
+</body>
+</html>

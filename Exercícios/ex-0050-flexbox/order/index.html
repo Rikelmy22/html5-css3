@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade order</title>
+    <style>
+        #conteiner {
+            display: flex;/* Essa propriedade é essencial para tornar os itens dentro do conteiner flexíveis  */
+        }
+        .item {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            text-align: center;
+            margin: 0 10px;
+        }
+        .order1 {
+            order: 1;
+        }
+        .order2 {
+            order: 2;
+        }
+        .order3 {
+            order: 3;
+        }
+        .order4 {
+            order: -4;
+        }
+        /* A propriedade order só responderá aos valores se o conteiner tiver um display flex e assim será possível posicionar os itens em diferentes sequências */
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item order1">01</div>
+        <div class="item order2">02</div>
+        <div class="item order3">03</div>
+        <div class="item order4">04</div>
+</body>
+</html>

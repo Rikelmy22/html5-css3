@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade FLEX GROW</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }          
+
+        #conteiner {
+            display: flex;
+            width: 500px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        .item { 
+            width: 150px;
+            background-color: gray;
+            text-align: center;
+            border: 1px solid white;
+            flex-shrink: 1;
+        }
+        
+        .item2{
+        flex-shrink: 3;
+        }
+
+        .item3{
+        flex-shrink:1 ;
+        }
+        /* Essa propriedade é responsável por dividr a proporção dentro do contêiner pai de maneira igual. Mas deve-se respeitar sempre o padding e o conteúdo presente nos itens e o valor negativo nunca será conpilado pois nada diminui negativamente*/
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item">01</div>
+        <div class="item item2">02</div>
+        <div class="item item3">03</div>
+        <div class="item">04</div>
+</body>
+</html>
